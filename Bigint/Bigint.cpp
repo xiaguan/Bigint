@@ -157,7 +157,7 @@ struct bigint {
         bigint result;
         if (*this > s) {
         }
-        else {
+            else {
             cout << " the result of / <1";
         }
         result.int_rev.insert(result.int_rev.begin(), this->size(), 0);
@@ -185,8 +185,8 @@ ostream& operator<<(ostream& out, const bigint& s) {
     }
     else {
         for (int i = s.int_rev.size() - 1; i >= 0; i--) {
-            out << s.int_rev[i];
-        }
+        out << s.int_rev[i];
+    }
     }
     return out;
 }
